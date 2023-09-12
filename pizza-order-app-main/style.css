@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background-image: url(./pizza-pizza-filled-with-tomatoes-salami-olives.jpg);
+  object-fit: cover;
+  font-family: sans-serif;
+}
+header {
+  padding: 10px;
+}
+
+.name-text-box {
+  height: 20px;
+}
+
+.name-label {
+  font-size: large;
+  color: white;
+}
+
+.delivery {
+  font-size: large;
+  color: white;
+}
+
+select {
+  height: 20px;
+}
+
+section {
+  position: relative;
+  margin-left: 30px;
+}
+
+h1 {
+  text-align: center;
+  padding: 10px 0;
+  color: white;
+}
+
+img {
+  float: left;
+  margin-left: 100px;
+  margin-top: 100px;
+  border-radius: 20px;
+}
+
+/*pizza size and price section*/
+
+.main-conatiner {
+  position: absolute;
+  left: 70%;
+}
+
+.pizza-size-main-container {
+  display: flex;
+  justify-content: space-around;
+  background-color: #e2f6ca;
+  width: 350px;
+  margin-bottom: 5px;
+  padding-bottom: 10px;
+}
+
+.one {
+  padding: 10px;
+  width: 150px;
+}
+
+p {
+  text-align: center;
+  padding: 10px;
+}
+
+h3 {
+  padding: 10px;
+  width: 350px;
+  background-color: #e2f6ca;
+  color: rgb(108, 101, 101);
+}
+
+/*pizza toppings section*/
+
+.toppings-main-container {
+  display: flex;
+  justify-content: space-around;
+  background-color: #e2f6ca;
+  width: 350px;
+  padding-bottom: 10px;
+}
+
+/*total */
+
+#summary-div {
+  text-align: left;
+  background-color: #e2f6ca;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}

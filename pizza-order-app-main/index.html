@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+ 
+      
+      <label class="name-label" for="">Enter your name:</label>
+      <input type="text" class="name-text-box" value="" />
+      <label class="delivery" for="#select">Delivery:</label>
+      <select id="select" name="selection" class="item">
+        <option name="selection" class="item" value="0,00" onchange="updatePrice()">
+          Eat in
+        </option>
+        <option
+          name="selection"
+          class="item"
+          value="5,00"
+          
+        >
+          Home delivery +5,00 €
+        </option>
+        <option name="selection" class="item" value="0,00">Pickup food</option>
+      </select>
+    
+    
+      <h1>A.B.C Pizza</h1>
+      
+        <form action=""></form>
+        <div class="main-conatiner">
+          <h3>Pizza Size</h3>
+          <div class="pizza-size-main-container">
+            <div class="pizzaSize-container">
+              <div class="radio-container">
+                <div class="one">
+                  <input
+                    type="radio"
+                    id="radio-btn1"
+                    name="radioo"
+                    value="7"
+                    class="item"
+                    onchange="updatePrice()"
+                  />
+                  <label for="radio-btn1">For 2</label>
+                </div>
+                <div class="one">
+                  <input
+                    class="item"
+                    type="radio"
+                    id="radio-btn2"
+                    name="radioo"
+                    value="10,50"
+                    onchange="updatePrice()"
+                  />
+                  <label for="radio-btn2">For 4</label>
+                </div>
+                <div class="one">
+                  <input
+                    class="item"
+                    type="radio"
+                    id="radio-btn3"
+                    name="radioo"
+                    value="12,50"
+                    onchange="updatePrice()"
+                    
+                  />
+                  <label for="radio-btn3">For 6</label>
+                </div>
+                <div class="one">
+                  <input
+                    class="item"
+                    type="radio"
+                    id="radio-btn4"
+                    name="radioo"
+                    value="15,50"
+                    onchange="updatePrice()"
+                    
+                  />
+                  <label for="radio-btn4">For 8</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="pizza-size-price-container">
+              <p>7,50€</p>
+              <p>10,50€</p>
+              <p>12,50€</p>
+              <p>15,50€</p>
+            </div>
+          </div>
+
+          <h3>Toppings</h3>
+          <div class="toppings-main-container">
+            <div class="Toppings-container">
+              <div class="one">
+                <input
+                  type="checkbox"
+                  class="item1 item"
+                  value="0,00"
+                  onchange="updatePrice()"
+                  
+                />
+                <label for="">Pepperoni</label>
+              </div>
+              <div class="one">
+                <input
+                  type="checkbox"
+                  class="item2 item"
+                  value="0,00"
+                  onchange="updatePrice()"
+                  
+                />
+                <label for="">Mushrooms</label>
+              </div>
+              <div class="one">
+                <input
+                  type="checkbox"
+                  class="item3 item"
+                  value="0,00"
+                  onchange="updatePrice()"
+                  
+                />
+                <label for="">Bell peppers</label>
+              </div>
+              <div class="one">
+                <input
+                  type="checkbox"
+                  class="item4 item"
+                  value="0,00"
+                  onchange="updatePrice()"
+                  
+                />
+                <label for="">Onions</label>
+              </div>
+              <div class="one">
+                <input
+                  type="checkbox"
+                  class="item5 item"
+                  value="2,00"
+                  onchange="updatePrice()"
+                  />
+                <label for="">Olives</label>
+              </div>
+              <div class="one">
+                <input
+                  type="checkbox"
+                  class="item6 item"
+                  value="1,00"
+                  onchange="updatePrice()"
+                  />
+                <label for="">Sausage</label>
+              </div>
+              <div class="one">
+                <input
+                  type="checkbox"
+                  class="item7 item"
+                  value="2,00"
+                  onchange="updatePrice()"
+                 />
+                <label for="">Pineapple</label>
+              </div>
+              <div class="one">
+                <input
+                  type="checkbox"
+                  class="item8 item"
+                  value="2,00"
+                  onchange="updatePrice()"
+                  />
+                <label for="">Spinach</label>
+              </div>
+              <div class="one">
+                <input
+                  type="checkbox"
+                  class="item9 item"
+                  value="2,00"
+                  onchange="updatePrice()"
+                 />
+                <label for="">Bacon</label>
+              </div>
+              <div class="one">
+                <input
+                  name="item10"
+                  type="checkbox"
+                  class="item10 item"
+                  value="2,00"
+                  onchange="updatePrice()"
+                  />
+                <label for="item10"> Jalapenos</label>
+              </div>
+            </div>
+            <div class="toppings-price-container">
+              <p>+0,00 €</p>
+              <p>+0,00 €</p>
+              <p>+0,00 €</p>
+              <p>+0,00 €</p>
+              <p>+2,00 €</p>
+              <p>+1,00 €</p>
+              <p>+2,00 €</p>
+              <p>+2,00 €</p>
+              <p>+2,00 €</p>
+              <p>+2,00 €</p>
+            </div>
+          </div>
+          <div>
+            <p id="summary-div">Total price :</p>
+          </div>
+        </div>
+      </form>
+    <script src="./main.js"></script>
+  </body>
+</html>
