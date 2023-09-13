@@ -1,5 +1,6 @@
 function updatePrice() {
   let price = 0.0;
+  const selectOp = parseInt(document.querySelector("#select").value);
   const checkboxes = document.querySelectorAll(".item");
   for (let i = 0; i < checkboxes.length; i++) {
     if (checkboxes[i].checked) {
@@ -7,5 +8,5 @@ function updatePrice() {
     }
   }
   document.querySelector("#summary-div").innerText =
-    "Total price : " + price + "€";
+    "Total price : " + (price + selectOp) + "€";
 }
